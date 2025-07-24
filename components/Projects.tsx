@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -9,28 +9,23 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "DevOps Microservices Project",
-      description: "A fully containerized microservices architecture using modern DevOps tools and best practices. Features Flask APIs, PostgreSQL database, Redis caching, and Docker orchestration with service health checks and retry mechanisms.",
-      tech: ["Flask", "PostgreSQL", "Redis", "Docker", "Docker Compose", "cURL"],
+      title: "DevOps AI Deployment",
+      description: "Complete CI/CD pipeline for AI applications using Flask, Docker, Jenkins, and RHEL VM. Automates build, test, and deploy processes inside Docker containers.",
+      tech: ["Flask", "Docker", "Jenkins", "RHEL VM", "CI/CD", "AI"],
       image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
       color: "from-blue-500 to-purple-600",
-      github: "https://github.com/Rochitjain73/devops-microservices-"
+      github: "#",
+      linkedin: "#"
     },
     {
       id: 2,
-      title: "Gesture-Controlled Subway Surfers",
-      description: "Revolutionary gaming experience using hand gesture recognition to control Subway Surfers. Utilizes MediaPipe for real-time gesture detection and PyAutoGUI for seamless game control.",
-      tech: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI", "Computer Vision"],
+      title: "DevOps Microservices Project",
+      description: "Modular microservices architecture using Flask, PostgreSQL, Redis, and Docker Compose. Includes retry logic, caching, error handling, and container orchestration.",
+      tech: ["Flask", "PostgreSQL", "Redis", "Docker Compose", "Microservices"],
       image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-      color: "from-green-500 to-blue-600"
-    },
-    {
-      id: 3,
-      title: "DevOps AI Deployment",
-      description: "Complete CI/CD pipeline for AI applications using Docker containerization, Jenkins automation, and RHEL VM deployment. Features a Flask backend with automated testing and deployment.",
-      tech: ["Docker", "Jenkins", "GitHub", "VM", "Flask", "CI/CD"],
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
-      color: "from-orange-500 to-red-600"
+      color: "from-green-500 to-blue-600",
+      github: "https://github.com/Rochitjain73/devops-microservices-",
+      linkedin: "#"
     }
   ];
 
@@ -79,8 +74,13 @@ export default function Projects() {
                     >
                       <Github className="h-4 w-4" />
                     </Button>
-                    <Button size="sm" variant="secondary" className="p-2 bg-white/20 hover:bg-white/30 text-white border-none">
-                      <ExternalLink className="h-4 w-4" />
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="p-2 bg-white/20 hover:bg-white/30 text-white border-none"
+                      onClick={() => project.linkedin && window.open(project.linkedin, '_blank')}
+                    >
+                      <Linkedin className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
