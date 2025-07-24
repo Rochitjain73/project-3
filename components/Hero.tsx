@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowDown, FileText, Mail, FolderOpen } from 'lucide-react';
+import { ArrowDown, FileText, Mail, FolderOpen, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Hero() {
@@ -60,11 +60,25 @@ export default function Hero() {
             AI Engineer & DevOps Enthusiast
           </motion.h2>
           
+          <motion.div
+            className="mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900 rounded-full">
+              <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+              <span className="text-blue-800 dark:text-blue-200 font-medium">
+                B.Tech Student at MNIT Jaipur
+              </span>
+            </div>
+          </motion.div>
+          
           <motion.p
             className="text-lg md:text-xl mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
           >
             "Turning smart ideas into real-world AI tools."
           </motion.p>
@@ -73,7 +87,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
           >
             <Button
               onClick={() => scrollToSection('projects')}

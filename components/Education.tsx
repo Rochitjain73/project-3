@@ -11,20 +11,6 @@ export default function Education() {
       period: "2022 - 2026",
       description: "Currently pursuing my bachelor's degree with focus on AI and machine learning applications.",
       icon: <GraduationCap className="h-8 w-8" />
-    },
-    {
-      degree: "Class XII",
-      institution: "Shiv Jyoti School",
-      period: "2022",
-      description: "Completed higher secondary education with 72% marks.",
-      icon: <BookOpen className="h-8 w-8" />
-    },
-    {
-      degree: "Class X",
-      institution: "Noble School",
-      period: "2020",
-      description: "Completed secondary education with 73% marks.",
-      icon: <BookOpen className="h-8 w-8" />
     }
   ];
 
