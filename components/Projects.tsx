@@ -9,11 +9,12 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Maths Tutor AI",
-      description: "An AI-powered mathematics tutor that explains complex mathematical concepts step-by-step using LaTeX formatting. Built with Gemini API and LangChain for intelligent tutoring.",
-      tech: ["Python", "Gemini API", "Streamlit", "LangChain", "LaTeX"],
-      image: "https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg",
-      color: "from-blue-500 to-purple-600"
+      title: "DevOps Microservices Project",
+      description: "A fully containerized microservices architecture using modern DevOps tools and best practices. Features Flask APIs, PostgreSQL database, Redis caching, and Docker orchestration with service health checks and retry mechanisms.",
+      tech: ["Flask", "PostgreSQL", "Redis", "Docker", "Docker Compose", "cURL"],
+      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
+      color: "from-blue-500 to-purple-600",
+      github: "https://github.com/Rochitjain73/devops-microservices-"
     },
     {
       id: 2,
@@ -70,7 +71,12 @@ export default function Projects() {
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-80`}></div>
                   <div className="absolute top-4 right-4 flex gap-2">
-                    <Button size="sm" variant="secondary" className="p-2 bg-white/20 hover:bg-white/30 text-white border-none">
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="p-2 bg-white/20 hover:bg-white/30 text-white border-none"
+                      onClick={() => project.github && window.open(project.github, '_blank')}
+                    >
                       <Github className="h-4 w-4" />
                     </Button>
                     <Button size="sm" variant="secondary" className="p-2 bg-white/20 hover:bg-white/30 text-white border-none">
