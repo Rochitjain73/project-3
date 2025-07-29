@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, FileText, Mail, FolderOpen, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import ResumeDownloadButton from '@components/ResumeDownloadButton'
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -97,7 +96,18 @@ export default function Hero() {
               <FolderOpen className="h-4 w-4" />
               Projects
             </Button>
-            <ResumeDownloadButton />
+            <a
+                  href="/resume.pdf" // Path to your PDF in the public folder
+                  download // This tells the browser to download the file
+                >
+                  <button
+                    type="button"
+                    className="border border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 px-8 py-3 rounded-full flex items-center gap-2"
+                  >
+                    <FileText className="h-4 w-4" />
+                    Resume
+                  </button>
+                </a>
             <Button
               onClick={() => scrollToSection('contact')}
               variant="outline"

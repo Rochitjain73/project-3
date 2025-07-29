@@ -9,13 +9,13 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "DevOps AI Deployment",
+      title: "Flask Deployment",
       description: "Complete CI/CD pipeline for AI applications using Flask, Docker, Jenkins, and RHEL VM. Automates build, test, and deploy processes inside Docker containers.",
       tech: ["Flask", "Docker", "Jenkins", "RHEL VM", "CI/CD", "AI"],
       image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
       color: "from-blue-500 to-purple-600",
-      github: "#",
-      linkedin: "#"
+      github: "https://github.com/Rochitjain73/flask-devops-ci",
+      linkedin: "https://www.linkedin.com/posts/rochit-jain-b90408248_devops-jenkins-docker-activity-7347796689547685888-rPcQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1I7JwB5glvFpV8NnKmHWHHbnD0beJDiq4"
     },
     {
       id: 2,
@@ -25,6 +25,26 @@ export default function Projects() {
       image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
       color: "from-green-500 to-blue-600",
       github: "https://github.com/Rochitjain73/devops-microservices-",
+      linkedin: "https://www.linkedin.com/posts/rochit-jain-b90408248_devops-docker-microservices-activity-7352783207311790081-LLfd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1I7JwB5glvFpV8NnKmHWHHbnD0beJDiq4"
+    },
+     {
+      id: 3,
+      title: "Kubernetes Cluster Management with EKS",
+      description: "Deployed and managed containerized applications on AWS using Kubernetes and EKS.",
+      tech: ["Kubernetes", "AWS EKS", "eksctl", "kubectl", "Docker", "Cloud Networking"],
+      image: "https://images.pexels.com/photos/733500/pexels-photo-733500.jpeg",
+      color: "from-yellow-500 to-orange-600",
+      github: "#",
+      linkedin: "#"
+    },
+    {
+      id: 4,
+      title: "Netflix Data Analysis Project",
+      description: "Analyzed and visualized Netflix’s content dataset using advanced SQL queries and Power BI dashboards. Generated insights on genre popularity, content trends over time, and regional distribution.",
+      tech: ["MySQL", "Power BI", "Excel", "Data Cleaning", "Trend Analysis", "SQL"],
+      image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
+      color: "from-red-500 to-pink-600",
+      github: "#",
       linkedin: "#"
     }
   ];
