@@ -12,12 +12,6 @@ export default function Experience() {
       description: "Leading marketing initiatives for one of India's largest technical festivals."
     },
     {
-      title: "Influencer PR Manager",
-      organization: "Shubham Tiwari",
-      period: "2023 - 2024",
-      description: "Managed public relations and influencer partnerships for digital growth."
-    },
-    {
       title: "Marketing Executive",
       organization: "Technical Society",
       period: "2023 - 2024",
