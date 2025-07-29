@@ -1,31 +1,25 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Mail, Linkedin, Instagram, Send, MapPin, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Mail, Linkedin, Instagram, Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -34,20 +28,20 @@ export default function Contact() {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
       value: "rochitsethiya@gmail.com",
-      link: "mailto:rochitsethiya@gmail.com"
+      link: "mailto:rochitsethiya@gmail.com",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
       value: "rochit-jain-b90408248",
-      link: "https://linkedin.com/in/rochit-jain-b90408248"
+      link: "https://linkedin.com/in/rochit-jain-b90408248",
     },
     {
       icon: <Instagram className="h-5 w-5" />,
       label: "Instagram",
       value: "@rochit.jain.73",
-      link: "https://instagram.com/rochit.jain.73"
-    }
+      link: "https://instagram.com/rochit.jain.73",
+    },
   ];
 
   return (
@@ -68,7 +62,7 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -82,7 +76,6 @@ export default function Contact() {
               <p className="text-gray-600 dark:text-gray-300 mb-8">
                 I'm always excited to discuss new projects, creative ideas, or opportunities to be part of your vision.
               </p>
-              
               <div className="space-y-6">
                 {contactInfo.map((contact, index) => (
                   <motion.a
@@ -114,7 +107,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+          {/* Contact Form using Web3Forms */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -125,8 +118,18 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">
                 Send a Message 📩
               </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
+
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                className="space-y-6"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="50463f19-f4b0-4092-982d-1aca30055e6b"
+                />
+
                 <div>
                   <Input
                     type="text"
@@ -138,7 +141,6 @@ export default function Contact() {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <Input
                     type="email"
@@ -150,7 +152,6 @@ export default function Contact() {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <Textarea
                     name="message"
@@ -162,7 +163,6 @@ export default function Contact() {
                     className="w-full resize-none"
                   />
                 </div>
-                
                 <Button
                   type="submit"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2 justify-center"
