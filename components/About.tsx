@@ -51,7 +51,7 @@ export default function About() {
                 🚀 My Story
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                An AI Engineer skilled in Python, NLP, and LLMs, with a knack for creating smart automation using LangChain, Gemini API, and DevOps tools. I love merging code and creativity to build useful, real-world applications.
+               A results-driven Business Analyst with a strong foundation in Python, data analysis, and DevOps practices. Skilled at interpreting data to drive decisions, streamline workflows, and enhance system performance. Experienced in using tools like SQL, Excel, and visualization platforms alongside DevOps tools like Docker, Jenkins, and AWS to bridge the gap between technical execution and business goals. Passionate about merging analytical thinking with automation to deliver real-world, scalable solutions.
               </p>
             </div>
           </motion.div>
