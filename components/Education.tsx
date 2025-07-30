@@ -16,7 +16,6 @@ export default function Education() {
 
   const achievements = [
     "98.7 percentile in JEE Mains 2022",
-    "Certified in Generative AI by Google",
     "Coursera: Microeconomics (Rice University)",
     "Coursera: English Prep (Rice University)"
   ];
