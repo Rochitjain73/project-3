@@ -51,7 +51,7 @@ export default function About() {
                 🚀 My Story
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-               A results-driven Business Analyst with a strong foundation in Python, data analysis, and DevOps practices. Skilled at interpreting data to drive decisions, streamline workflows, and enhance system performance. Experienced in using tools like SQL, Excel, and visualization platforms alongside DevOps tools like Docker, Jenkins, and AWS to bridge the gap between technical execution and business goals. Passionate about merging analytical thinking with automation to deliver real-world, scalable solutions.
+               Highly motivated DevOps enthusiast with hands-on experience in deploying full-stack and machine learning applications. Proficient in Docker, CI/CD pipelines, cloud infrastructure (AWS/GCP), and version control systems. Skilled in building scalable and automated deployment workflows, infrastructure as code, and back-end systems to ensure reliable and efficient software delivery.
               </p>
             </div>
           </motion.div>

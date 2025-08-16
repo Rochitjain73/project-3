@@ -37,16 +37,6 @@ export default function Projects() {
       github: "#",
       linkedin: "#"
     },
-    {
-      id: 4,
-      title: "Netflix Data Analysis Project",
-      description: "Analyzed and visualized Netflix’s content dataset using advanced SQL queries and Power BI dashboards. Generated insights on genre popularity, content trends over time, and regional distribution.",
-      tech: ["MySQL", "Power BI", "Excel", "Data Cleaning", "Trend Analysis", "SQL"],
-      image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
-      color: "from-red-500 to-pink-600",
-      github: "#",
-      linkedin: "#"
-    }
   ];
 
   return (
@@ -62,7 +52,7 @@ export default function Projects() {
           <h2 className="text-4xl font-bold mb-4 gradient-text">Featured Projects</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
           <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills in AI, machine learning, and DevOps.
+            Here are some of my recent projects that showcase my skills in DevOps.
           </p>
         </motion.div>
 
