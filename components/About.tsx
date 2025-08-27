@@ -5,9 +5,8 @@ import { Badge } from '@/components/ui/badge';
 
 export default function About() {
   const skills = [
-    "Python", "C++", "SQL", "JavaScript", "Hugging Face", "LangChain",
-    "Gemini", "Transformers", "Docker", "GitHub Actions", "Jenkins",
-    "MongoDB", "FastAPI", "Flask", "Streamlit", "Leadership", "Marketing", "Digital Strategy"
+ 
+    "Python", "C++", "Docker", "Jenkins", "Ansible", "CI/CD Pipeline", "Kubernetes", "OpenShift", "GitHub Actions", "Docker Compose", "AWS EC2", "S3", "Terraform", "OpenAI API", "LangChain", "Hugging Face", "Prometheus", "Grafana", "Postman", "VS Code", "Linux (Ubuntu)", "API Testing"
   ];
 
   const containerVariants = {
