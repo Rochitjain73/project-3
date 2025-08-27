@@ -97,7 +97,7 @@ export default function Hero() {
               Projects
             </Button>
             <a
-                  href="/Devops_resume.pdf" // Path to your PDF in the public folder
+                  href="/DEVOPS_RESUME.pdf" // Path to your PDF in the public folder
                   download // This tells the browser to download the file
                 >
                   <button
