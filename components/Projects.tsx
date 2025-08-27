@@ -10,7 +10,7 @@ export default function Projects() {
     {
       id: 1,
       title: "Flask Deployment",
-      description: "Complete CI/CD pipeline for AI applications using Flask, Docker, Jenkins, and RHEL VM. Automates build, test, and deploy processes inside Docker containers.",
+      description: "Complete CI/CD pipeline using Flask, Docker, Jenkins, and RHEL VM. Automates build, test, and deploy processes inside Docker containers.",
       tech: ["Flask", "Docker", "Jenkins", "RHEL VM", "CI/CD", "AI"],
       image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
       color: "from-blue-500 to-purple-600",
