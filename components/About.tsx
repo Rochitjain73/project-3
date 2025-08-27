@@ -50,7 +50,9 @@ export default function About() {
                 🚀 My Story
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-               Highly motivated DevOps enthusiast with hands-on experience in deploying full-stack and machine learning applications. Proficient in Docker, CI/CD pipelines, cloud infrastructure (AWS/GCP), and version control systems. Skilled in building scalable and automated deployment workflows, infrastructure as code, and back-end systems to ensure reliable and efficient software delivery.
+               I am a DevOps enthusiast currently learning and practicing tools like Docker, CI/CD, and AWS. I have deployed
+Flask applications and explored automation, infrastructure as code, and scalable deployments to build a strong
+foundation in DevOps.
               </p>
             </div>
           </motion.div>
