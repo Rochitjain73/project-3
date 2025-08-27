@@ -30,7 +30,7 @@ export default function Projects() {
      {
       id: 3,
       title: "Kubernetes Cluster Management with EKS",
-      description: "Deployed and managed containerized applications on AWS using Kubernetes and EKS.",
+      description: "Deploying and managing containerized applications on AWS using Kubernetes and EKS.",
       tech: ["Kubernetes", "AWS EKS", "eksctl", "kubectl", "Docker", "Cloud Networking"],
       image: "https://images.pexels.com/photos/733500/pexels-photo-733500.jpeg",
       color: "from-yellow-500 to-orange-600",
